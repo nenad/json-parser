@@ -352,7 +352,7 @@
             if (trim(json) === '') {
                 $result.innerHTML = '';
                 $status.classList.remove('status-error');
-                changeFavicon('undefined');
+                changeFavicon('valid');
                 return
             }
             $status.classList.remove('status-error');
