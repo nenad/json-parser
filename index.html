@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Json Parser</title>
+    <meta
+      name="keywords"
+      content="JSON,javascript object notation,parser,parseur,online,tool,free,javascript,tree,treeview,tree view,post,syntax highlighting,парсер,解析器,محلل جسون"
+    />
+    <meta
+      name="description"
+      content="Analyze your JSON string as you type with an online Javascript parser, featuring tree view and syntax highlighting. Processing is done locally: no data send to server."
+    />
+    <meta name="author" content="Olivier Cuenot, cloned by Nenad Stojanovikj" />
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <link rel="icon" href="favicon/valid.png" id="favicon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="beautify">
+    <div class="ui-editor">
+      <textarea
+        class="ui-field json"
+        id="editor"
+        spellcheck="false"
+        contenteditable="true"
+      >
+{"ID":null,"name":"Doe","first-name":"John","age":25,"hobbies":["reading","cinema",{"sports":["volley-ball","badminton"]}],"address":{}}</textarea
+      >
+      <div class="ui-resizer"></div>
+    </div>
+    <div class="ui-aside">
+      <div class="ui-notification" id="status"></div>
+      <div class="ui-menu">
+        <div class="ui-menu-dropdown">
+          <div class="ui-menu-panel">
+            <div class="ui-menu-item ui-option" id="beautify">Beautify</div>
+            <div class="ui-menu-item ui-option" id="show-types">Show Types</div>
+            <div class="ui-menu-item ui-option" id="show-indexes">
+              Show Indexes
+            </div>
+            <div class="ui-menu-item about" style="display: none">About</div>
+          </div>
+        </div>
+      </div>
+      <div class="ui-treeview json" id="result"></div>
+      <div class="ui-searchbar"><div style="position: absolute"></div></div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
