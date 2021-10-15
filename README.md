@@ -10,4 +10,4 @@ with the help of the amazing [wayback_machine_downloader](https://github.com/har
 
 I was sad when I opened my favorite page for parsing JSON and saw that it's down.
 I told my friends that I was disappointed how slow other tools are and they suggested
-to use archive.org to find it and ressurect it through GitHub's pages. Now I can be happy again!
+to use archive.org to find it and resurrect it through GitHub's pages. Now I can be happy again!
