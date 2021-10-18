@@ -12,6 +12,10 @@ body {
   right: 0;
   top: 0;
 }
+a {
+  text-decoration: none;
+  color: #555;
+}
 ol,
 ul {
   list-style-type: none;
@@ -139,6 +143,7 @@ ul {
   padding: 2px;
   position: relative;
   -moz-user-select: none;
+  user-select: none;
   white-space: nowrap;
 }
 .ui-menu-panel:before {
@@ -179,6 +184,9 @@ ul {
   content: "";
   display: inline-block;
   width: 1.2em;
+}
+.separator {
+  display: block;
 }
 .beautify #beautify::before,
 .show-indexes #show-indexes::before,
