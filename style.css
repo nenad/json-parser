@@ -94,6 +94,16 @@ ul {
   padding: 30px;
   position: relative;
 }
+
+.ui-copy {
+  height: 30px;
+  width: 100px;
+  position: fixed;
+  right: 200px;
+  top: 7px;
+  z-index: 1;
+}
+
 .ui-menu {
   height: 40px;
   position: fixed;
@@ -101,6 +111,8 @@ ul {
   width: 40px;
   z-index: 1;
 }
+
+
 .ui-menu::before {
   background: url(img/gear.svg) no-repeat 50% 50% / 25px;
   content: "";

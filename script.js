@@ -3,6 +3,19 @@
     var typeOf = function (variable) {
         return typeof eval(variable)
     };
+
+    // Clipboard button
+    (function() {
+        var $editor = document.getElementById('editor'),
+        $clipboardButton = document.getElementById('button-copy');
+
+        $clipboardButton.addEventListener('click', function (ev) {
+            var editorObj = JSON.parse($editor.value);
+            navigator.clipboard.writeText(JSON.stringify(editorObj, null, 4));
+        })
+    })();
+
+    // Editor
     (function () {
         var $status = document.getElementById('status'),
             $head = document.querySelector('head'),
