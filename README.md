@@ -11,3 +11,13 @@ with the help of the amazing [wayback_machine_downloader](https://github.com/har
 I was sad when I opened my favorite page for parsing JSON and saw that it's down.
 I told my friends that I was disappointed how slow other tools are and they suggested
 to use archive.org to find it and resurrect it through GitHub's pages. Now I can be happy again!
+
+
+## DockerHub
+
+I have created and enabled Docker Image to help a little bit with using json-parser.
+```bash
+$ docker pull happylie/json-parser:latest
+
+$ docker run -p 80:80 9c08ee25ba0a
+```
